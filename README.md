@@ -1,5 +1,8 @@
 # Anime Amigo
-The website uses Anilist Api to display the anime data [here](https://anilist.gitbook.io/anilist-apiv2-docs/overview/graphql/getting-started)
+Anime Amigo is a user-friendly platform that recommends anime based on your favorite genres.
+
+## API
+The website uses Anilist graphQL Api to display the anime data [visit API](https://anilist.gitbook.io/anilist-apiv2-docs/overview/graphql/getting-started)
 
 ## check it out
 [visit the website](https://anime-amigo.netlify.app/)
