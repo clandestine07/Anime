@@ -60,7 +60,7 @@ function handleResponse(response) {
 
 function handleAnimeDetails(data) {
     console.log(data);
-    const animeDetailsContainer = document.getElementById("animeDetails");
+    const animeDetailsContainer = document.getElementById("animeSummary");
 
     // Display anime title
     const title = document.createElement("h1");
