@@ -4,9 +4,15 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background: rgb(2, 0, 36);
-  position: relative;
+  position: relative;  
 }
-
+.header p{
+  font-family: "Croissant One", cursive;
+  color: #e70000;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
 h1 {
   color: #e7df00;
   font-family: "Dancing Script", cursive;
@@ -64,14 +70,53 @@ h2 {
 .recommendations {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  margin: 10px;
+  grid-gap: 50px;
+  margin-left: 140px;
   padding: 10px;
   opacity: 1;
+  max-width: 1200px;
+}
+.recommendations li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(121, 100, 100, 0.1);
+  border: 2px solid rgb(0, 36, 17);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.recommendations li:hover {
+  transform: scale(1.05);
+}
+
+.recommendations li img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  margin: auto;
+}
+
+.recommendations li div {
+  padding: 10px;
+}
+
+.recommendations li button {
+  background-color: #00def3;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.recommendations li button:hover {
+  background-color: #009bb6;
 }
 
 .loader-img {
-  width: 85px;
+  width: 55px;
   height: 85px;
 }
 
@@ -90,5 +135,10 @@ h2 {
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8em 1.5em;
   }
 }

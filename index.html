@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>ANIME AMIGO</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="LUFFY.png">
+    <link rel="icon" type="image/png" href="luffy.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="loader" class="loader">
-        <img src="LUFFY.png" alt="loader" class="loader-img">
+        <img src="luffy.png" alt="loader" class="loader-img">
     </div>
 
-    <h1>Anime amigo</h1>
-    <a href="https://github.com/clandestine07/Anime-Recommendation">
-        <img src="github-icon.webp" alt="github-icon" class="icon">
-    </a>
-    
+    <div class="header">
+        <h1>ANIME AMIGO</h1>
+    </div>
+
     <form id="preferenceForm">
-        <label for="genre">choose your favorite genre ➡️</label>
+        <label for="genre">Choose a genre:</label>
         <select id="genre" name="genre" class="genre">
             <option value="action">Action</option>
             <option value="comedy">Comedy</option>
@@ -36,9 +35,7 @@
         <button type="button" onclick="getRecommendations()">Get Recommendations</button>
     </form>
 
-    <h2 id="h2">HAVE FUN !</h2>
     <ul id="recommendations" class="recommendations">
-        <!-- Recommended anime will be displayed here -->
     </ul>
 
     </div>

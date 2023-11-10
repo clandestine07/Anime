@@ -1,18 +1,17 @@
 // data needs to be fetch
 var query = `
 query ($genre: String) {
-Page {
-  media (type: ANIME, genre: $genre) {
-    id
-    title {
-      english
-    }
-    coverImage {
-      large
-      medium
+  Page {
+    media (type: ANIME, genre: $genre) {
+      id
+      title {
+        english
+      }
+      coverImage {
+        large
+      }
     }
   }
-}
 }
 `;
 
@@ -80,20 +79,14 @@ data.data.Page.media.forEach((anime) => {
   title.style.textAlign = "center";
   title.style.padding = "10px";
   title.style.margin = "10px";
+  title.style.marginLeft = "auto";
+  title.style.marginRight = "auto";
 
-  // Search for reviews
-    function searchAnime(){
-      window.open(`https://www.google.com/search?q=${anime.title.english}+anime+reviews`);
-    }
-
-    //btn for searcing reviews
-    const btn = document.createElement('button');
-    btn.innerHTML = "See The Reviews";
-    btn.addEventListener('click', searchAnime);
-    
     li.appendChild(img);
     li.appendChild(title);
-    li.appendChild(btn);
+    li.addEventListener('click' , () => {
+      window.location.href = `summary.html?id=${anime.id}`;
+    })
 
   recommendations.appendChild(li);
 });
