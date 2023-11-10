@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ANIME AMIGO</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="LUFFY.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <img src="LUFFY.png" alt="loader" class="loader-img">
+    </div>
+
+    <h1>Anime amigo</h1>
+    <a href="https://github.com/clandestine07/Anime-Recommendation">
+        <img src="github-icon.webp" alt="github-icon" class="icon">
+    </a>
+    
+    <form id="preferenceForm">
+        <label for="genre">choose your favorite genre ➡️</label>
+        <select id="genre" name="genre" class="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="sci-fi">sci-fi</option>
+            <option value="sports">sports</option>
+            <option value="romance">romance</option>
+            <option value="comedy">comedy</option>
+            <option value="Psychological">Psychological</option>
+            <option value="Adventure">Adventure</option>
+            <option value="fantasy">fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="thriller">thriller</option>
+            <option value="supernatural">supernatural</option>
+        </select>
+        <button type="button" onclick="getRecommendations()">Get Recommendations</button>
+    </form>
+
+    <h2 id="h2">HAVE FUN !</h2>
+    <ul id="recommendations" class="recommendations">
+        <!-- Recommended anime will be displayed here -->
+    </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

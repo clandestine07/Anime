@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Courgette&family=Croissant+One&family=Dancing+Script:wght@500&family=Sedgwick+Ave+Display&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: rgb(2, 0, 36);
+  position: relative;
+}
+
+h1 {
+  color: #e7df00;
+  font-family: "Dancing Script", cursive;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  font-family: "Croissant One", cursive;
+  color: #e70000;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.genre {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #00def3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+}
+h2 {
+  font-family: "Croissant One", cursive;
+  color: #e70000;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin: 10px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.loader-img {
+  width: 85px;
+  height: 85px;
+}
+
+.loader {
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
