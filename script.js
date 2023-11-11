@@ -18,11 +18,9 @@ query ($genre: String) {
 function getRecommendations() {
 const genrePreference = document.getElementById("genre").value;
 const recommendations = document.getElementById("recommendations");
+const loader = document.getElementById("loader");
 
-// Clearing the previous recommendations
 recommendations.innerHTML = "";
-
-//display loader while fetching data
 loader.style.display = "block";
 
 var variables = {

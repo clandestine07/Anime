@@ -193,4 +193,15 @@ h2 {
   .recommendations li{
     width: 100%;
   }
+  .loader {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+
+  .loader-img {
+    width: 50px;
+    height: 60px;
+  }
 }
