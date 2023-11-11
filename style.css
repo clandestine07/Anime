@@ -147,7 +147,8 @@ h2 {
     align-items: center;
   }
    .recommendations {
-      grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       margin: auto;
       grid-gap: 50px;
       padding: 10px;
