@@ -62,7 +62,7 @@ function handleAnimeDetails(data) {
     console.log(data);
     const animeDetailsContainer = document.getElementById("animeSummary");
 
-    // Display anime title
+    //anime title
     const title = document.createElement("h1");
     title.textContent = data.data.Media.title.english;
     title.style.color = "yellow";
@@ -70,19 +70,19 @@ function handleAnimeDetails(data) {
     title.style.fontFamily = "sans-serif";
     animeDetailsContainer.appendChild(title);
 
-    // Display anime description
+    //anime description
     const description = document.createElement("p");
     description.textContent = data.data.Media.description;
     description.style.backgroundColor = "peach"
     animeDetailsContainer.appendChild(description);
 
-    // Display anime cover image
+    //image
     const coverImage = document.createElement("img");
     coverImage.src = data.data.Media.coverImage.large;
     coverImage.alt = "Anime Cover Image";
     animeDetailsContainer.appendChild(coverImage);
 
-    // Display the average rating
+    //average rating
     const rating = document.createElement("div");
     rating.textContent = `Average Rating: ${data.data.Media.averageScore}`;
     rating.style.color = "#00def3";
@@ -99,7 +99,7 @@ function handleAnimeDetails(data) {
     characterHeading.style.padding = "10px";
     animeDetailsContainer.appendChild(characterHeading);
 
-    // Display characters
+    // characters
     const charactersContainer = document.createElement("div");
     charactersContainer.className = "characters-container";
     
