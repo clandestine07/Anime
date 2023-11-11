@@ -85,7 +85,7 @@ data.data.Page.media.forEach((anime) => {
     li.appendChild(img);
     li.appendChild(title);
     li.addEventListener('click' , () => {
-      window.location.href = `/frontend/summary.html?id=${anime.id}`;
+      window.location.href = `summary.html?id=${anime.id}`;
     })
 
   recommendations.appendChild(li);
