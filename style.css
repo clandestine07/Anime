@@ -146,7 +146,7 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-   .recommendations {
+   .recommendations ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin: auto;
