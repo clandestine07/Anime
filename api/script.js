@@ -93,7 +93,6 @@ data.data.Page.media.forEach((anime) => {
 }
 
 function handleError(err) {
-// handle error if any
 alert("An error has occured");
 console.log(err);
 }
